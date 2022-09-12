@@ -2,7 +2,7 @@
 
 Newsletter para Diseño Web
 
-Diseño utilizando flex-box
+Diseño utilizando FLEX-BOX y realizando el estilo de CSS en linea
 
 Responsabiliades:
 
@@ -10,4 +10,4 @@ Lucas: encabezado y presentacion
 Jero: recetas
 Ema: detalles y pie
 
-Realizar Pull request creando una nueva branch.
+Realizar Pull Request creando una nueva branch.
