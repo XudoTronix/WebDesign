@@ -9,5 +9,3 @@ Responsabiliades:
 Lucas: encabezado y presentacion.
 Jero: recetas.
 Ema: detalles y pie.
-
-Realizar Pull Request creando una nueva branch.
