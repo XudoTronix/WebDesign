@@ -33,6 +33,12 @@
 			height: 100px;
 		}
 
+		.presentacion_td{
+			display: flex;
+			width: auto;
+			height: auto;
+		}
+
 		.top-letter {
 			display: flex;
 			flex-flow: row wrap;
@@ -43,14 +49,33 @@
 			padding-left: 80px;
 		}
 
+		.text-present{
+			display: flex;
+			
+			align-items: center;
+			color: black;
+			font-family:'Noto Sans';
+			font-size: 12pt;
+			
+		}
+
 
 		.mylinks{
 			text-decoration: none;		
 			width: auto;
 			height: auto;	
 			color: black;	
-		
 		}
+
+		.presentacion{
+			display: flex;
+			flex-wrap: wrap;
+			align-content: center;
+			background-color: #E86A25;
+			
+		}
+
+	
 		#recetas {
 			display: flex;
 			justify-content: space-around;
@@ -119,7 +144,7 @@
 </head>
 <body>
 	<table cellpadding="0" cellspacing="0" class="tabla_principal">
-		<tr class="encabezado" style="display: flex;flex-wrap: wrap; align-content: center; ">
+		<tr class="encabezado"  >
 			<td style="display: flex; flex-wrap: wrap; align-content: center;" class="encabezado_td">
 				<img src="images/Cookpad_logo.png" style="width: 210px;height: 57px;padding-left: 50px;" alt=""> 
 				<div class="top-letter">
@@ -129,12 +154,18 @@
 				</div>
 			</td>
 		</tr>
-		<tr id="presentacion">
-			<td>
-
+		<tr class="presentacion" >
+			<td style="display: flex; flex-wrap: wrap;align-content: center;display:block;margin-left: auto;margin-right: auto;padding-bottom: 20px; float: ;" class="presentacion_td">
+				<img src="images/evento.png" alt="" style="width: 500px; " >
+				<div class="text-present">
+					Vamos a cocinar! El evento social gastronomico anual ausficiado por Cookpad, 
+					inscribete y preparate para cocinar las 3 recetas de este año
+				</div>
 			</td>
 		</tr>
-	<!--	<tr id="recetas">
+
+	<tr id="recetas">
+
 			<td>
 				<table class="receta">
 					<tr>
