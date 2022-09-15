@@ -14,20 +14,43 @@
 		.tabla_principal {
 			margin: auto;
 			min-width: auto;
+			
 		}		  
 		
+		.encabezado{
+			display: flex;
+			flex-wrap: wrap;
+			align-content: center;
+			background-color: #D9D9D9;
+			width: auto;
+			height: 100px;
+			
+		}
+
+		.encabezado_td{
+			display: flex;
+			width: auto;
+			height: 100px;
+		}
+
 		.top-letter {
 			display: flex;
 			flex-flow: row wrap;
-			justify-content: end;
 			align-items: center;
 			color: black;
 			font-family:'Noto Sans';
-			font-size: 10pt;
-			text-decoration: none;		
-			padding-right: 10px;			
+			font-size: 20pt;
+			padding-left: 80px;
 		}
 
+
+		.mylinks{
+			text-decoration: none;		
+			width: auto;
+			height: auto;	
+			color: black;	
+		
+		}
 		#recetas {
 			display: flex;
 			justify-content: space-between;
@@ -97,15 +120,18 @@
 <body>
 	<table cellpadding="0" cellspacing="0" class="tabla_principal">
 		<tr class="encabezado" style="display: flex;flex-wrap: wrap; align-content: center; ">
-			<td style="display: flex;flex-wrap: wrap;align-content: center;background-color: #D9D9D9;">
-				<img src="images/Cookpad_logo.png" style="width: 100px;;position: relative;float: left; padding-left: 10px; padding: 20px;" alt=""> 
-				<a href="https://cookpad.com/ar/buscar/merienda?event=search.feed_seasonal_event" class="top-letter">Recetas |</a> 
-				<a href="https://cookpad.com/ar/#modals" class="top-letter">Sobre Nosotros |</a>
-				<a href="equipo@cookpad.com" class="top-letter">Contactanos</a> 
+			<td style="display: flex; flex-wrap: wrap; align-content: center;" class="encabezado_td">
+				<img src="images/Cookpad_logo.png" style="width: 210px;height: 57px;padding-left: 50px;" alt=""> 
+				<div class="top-letter">
+					<a href="https://cookpad.com/ar/buscar/merienda?event=search.feed_seasonal_event" class="mylinks">Recetas |</a> 
+					<a href="https://cookpad.com/ar/#modals" class="mylinks">Sobre Nosotros |</a>
+					<a href="equipo@cookpad.com" class="mylinks">Contactanos</a> 
+				</div>
 			</td>
 		</tr>
 		<tr id="presentacion">
 			<td>
+
 			</td>
 		</tr>
 		<tr id="recetas">
