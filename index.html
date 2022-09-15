@@ -22,16 +22,23 @@
 			flex-wrap: wrap;
 			align-content: center;
 			background-color: #D9D9D9;
-			width: auto;
 			min-height: 100px;
 			height: 100%;
-			
+			padding: 10px;
+			padding-bottom: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			align-content: center; 
+
 		}
 
 		.encabezado_td{
-			display: flex;
 			width: auto;
-			height: 100px;
+			min-height: 100px;
+			border: 3px solid red;
+			display: flex;
+			flex-wrap: wrap;
+			align-content: center;
 		}
 
 		.top-letter {
@@ -40,8 +47,9 @@
 			align-items: center;
 			color: black;
 			font-family:'Noto Sans';
-			font-size: 20pt;
+			font-size: 20px;
 			padding-left: 80px;
+			border: 1px solid black;
 		}
 
 
@@ -160,8 +168,8 @@
 </head>
 <body>
 	<table cellpadding="0" cellspacing="0" class="tabla_principal">
-		<tr class="encabezado" style="display: flex;flex-wrap: wrap; align-content: center; ">
-			<td style="display: flex; flex-wrap: wrap; align-content: center;" class="encabezado_td">
+		<tr class="encabezado">
+			<td class="encabezado_td">
 				<img src="images/Cookpad_logo.png" style="width: 210px;height: 57px;padding-left: 50px;" alt=""> 
 				<div class="top-letter">
 					<a href="https://cookpad.com/ar/buscar/merienda?event=search.feed_seasonal_event" class="mylinks">Recetas |</a> 
