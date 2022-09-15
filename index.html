@@ -166,24 +166,41 @@
 		#detalles td {
 			padding: 25px;
 		}
+		#detalles td table {
+			width: 100%;
+		}
 		#detalles td table tr td {
 			padding: 0px;
 			min-width: 300px;
+			display: flex;
+			justify-content: space-between;
 		}
 		.detalle__imagen {
 			border-radius: 12px;
 		}
+		#pie {
+			background-color: #FFC529;
+		}
+		#pie td {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
 		.tabla__pie td{
 			text-align: center;
 		}
-		.logos {
+		#logos {
 			display: flex;
-			align-items: flex-end;
+  			justify-content: space-between;
+			align-items: center;
 			width: 100%;
+			padding: 25px;
+			max-width: 350px;
 		}
-		.logos img {
+		#logos img {
 			min-width: 30px;
-			max-width: 76px;
+			max-width: 65px;
+			height: fit-content;
 		}
 	</style>
 	
@@ -263,10 +280,12 @@
 			<td>
 				<table>
 					<tr>
-						<td style="padding-right: 25px;">Festival en colaboración con el popular salon inmobiliario “Sima” bajo el proyecto “Cooking Lab”. “Sima” hará una reaparición después de haber sido un éxito deslumbrante en las dos ultimas ocasiones. El “Cookpad Live Giant Festival vol.3” con el tema “The Final Season” se llevará a cabo a partir desde el 17 de marzo de 2022. Las golosinas de edición limitada también se venden en el sitio web oficial de la CE de “cookpad Live cafe”. ¡No te lo pierdas!</td>
-						<td style="text-align: center;">
-							<img src="images\Imagen_reperesentativa.png" alt="Imagen de evento anterior" class="detalle__imagen">
-							<a>Imagen representativa</a>
+						<td>
+							<div style="padding-right: 25px;">Festival en colaboración con el popular salon inmobiliario “Sima” bajo el proyecto “Cooking Lab”. “Sima” hará una reaparición después de haber sido un éxito deslumbrante en las dos ultimas ocasiones. El “Cookpad Live Giant Festival vol.3” con el tema “The Final Season” se llevará a cabo a partir desde el 17 de marzo de 2022. Las golosinas de edición limitada también se venden en el sitio web oficial de la CE de “cookpad Live cafe”. ¡No te lo pierdas!</div>
+							<div style="text-align: center;">
+								<img src="images\Imagen_reperesentativa.png" alt="Imagen de evento anterior" class="detalle__imagen">
+								<p>Imagen representativa</p>
+							</div>
 						</td>
 					</tr>
 				</table>
@@ -274,28 +293,29 @@
 		</tr>
 		<tr id="pie">
 			<td>
-				<table>
-					<tr>
-						<td>
-							<table class="tabla__pie">
-								<tr>
-									<td>
-										<img src="images/Cookpad_logo.png" style="width: 370px;padding-left: 50px;" alt=""> 
-									</td>
-								</tr>
-								<tr>
-									<td>Derechos reservados</td>
-								</tr>
-							</table>
-						</td>
-						<td class="logos">
-							<img src="images/icono_facebook.png" alt="">
-							<img src="images/icono_twitter.png" alt="">
-							<img src="images/icono_instagram.png" alt="">
-							<img src="images/icono_youtube.png" alt="">
-						</td>
-					</tr>
-				</table>
+				<div>
+					<table class="tabla__pie">
+						<tr>
+							<td>
+								<div style="padding: 30px 50px 30px 50px;">
+									<img src="images/Cookpad_logo.png" style="width: 370px;" alt=""> 
+									<p>Derechos reservados</p>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id="logos">
+					<img src="images/icono_facebook.png" alt="">
+					<img src="images/icono_twitter.png" alt="">
+					<img src="images/icono_instagram.png" alt="">
+					<img src="images/icono_youtube.png" alt="">
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color: #201F1C; color: #676767; text-align: center; padding: 20px;">
+				Si no queres recibir mas emails, entra a este <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">link</a> 
 			</td>
 		</tr>
 	</table>
