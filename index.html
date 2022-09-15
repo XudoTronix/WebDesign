@@ -27,6 +27,57 @@
 			text-decoration: none;		
 			padding-right: 10px;			
 		  }
+
+
+		.receta {
+			display: flex;
+			flex-direction:column;
+			flex-wrap: nowrap;
+			justify-content: center;
+			background-color: #E89F25;
+			padding: 8px;
+			height: 270px;
+			border-radius: 12px;
+			margin: 25px;
+		}
+
+		.receta__imagen {
+			border-radius: 12px;
+			width: 190px;
+			margin-top: 10px;
+		}
+
+		.receta__caption {
+			order: 2;
+			font-size: 20px;
+			line-height: 20px;
+		}
+
+		.receta__button {
+			display: flex;
+			order: 3;
+			background-color: #fff;
+  			border: none;
+  			color: black;
+ 			text-align: center;
+			vertical-align: center;
+ 			text-decoration: none;
+ 			display: inline-block;
+ 			font-size: 20px;
+			line-height: 24px;
+ 			margin: 8px;
+			margin-left: 95px;
+ 			cursor: pointer;
+			border-radius: 12px;
+			width: 90px;
+			height: 35px;
+		}
+		
+		table, th, td {
+			border: 2px solid black;
+			border-collapse: collapse;
+			min-height: max-content;
+		}
 	</style>
 	
 </head>
@@ -44,54 +95,54 @@
 			<td>
 			</td>
 		</tr>
-		<tr id="recetas" style="display: flex; justify-content: space-around; flex-wrap: wrap; align-items: center; align-content: center; background-color: #E86A25; min-height: 275px; height: auto; width: auto;">
+		<tr id="recetas">
 			<td>
-				<table style="display: flex; flex-direction:column; flex-wrap: nowrap; justify-content: center; background-color: #E89F25; ">
+				<table class="receta">
 					<tr>
-						<td style="order: 1;">
-							<img src="C:\Users\jeroj\OneDrive\Documentos\GitHub\WebDesign\mini-brochetas-ppicada-foto-principal.webp" alt="Imagen de brochetas italianas">
+						<td>
+							<img src="C:\Users\jeroj\OneDrive\Documentos\GitHub\WebDesign\mini-brochetas-ppicada-foto-principal.webp" alt="Imagen de brochetas italianas" class="receta__imagen">
 						</td>
 					</tr>
 					<tr>
-						<td style="order: 2;"><h3>Brocheta italiana</h3></td>
+						<td class="receta__caption"><h3>Brocheta italiana</h3></td>
 					</tr>
 					<tr>
-						<td style="order: 3;">
-							<button>Ver Mas</button>
+						<td class="receta__button">
+							<a href="">Ver Mas</a>
 						</td>
 					</tr>
 				</table>
 			</td>
 			<td>
-				<table style="display: flex; flex-direction:column; flex-wrap: nowrap; justify-content: center; background-color: #E89F25;">
+				<table class="receta">
 					<tr>
 						<td>
-							<img src="C:\Users\jeroj\OneDrive\Documentos\GitHub\WebDesign\rotolos-de-espinaca-y-ricota-gratinados-foto-principal.webp" alt="Imagen de rotolos de espinaca">
+							<img src="C:\Users\jeroj\OneDrive\Documentos\GitHub\WebDesign\rotolos-de-espinaca-y-ricota-gratinados-foto-principal.webp" alt="Imagen de rotolos de espinaca" class="receta__imagen">
 						</td>
 					</tr>
 					<tr>
-						<td><h3>Rotolos veganos</h3></td>
+						<td class="receta__caption"><h3>Rotolos veganos</h3></td>
 					</tr>
 					<tr>
-						<td>
-							<button>Ver Mas</button>
+						<td class="receta__button">
+							<a href="">Ver Mas</a>
 						</td>
 					</tr>
 				</table>
 			</td>
 			<td>
-				<table style="display: flex; flex-direction:column; flex-wrap: nowrap; justify-content: center; background-color: #E89F25;">
+				<table class="receta">
 					<tr>
 						<td>
-							<img src="C:\Users\jeroj\OneDrive\Documentos\GitHub\WebDesign\mousse-de-durazno-al-natural-con-leche-condensada-casera-foto-principal.webp" alt="Imagen mouse de durazno">
+							<img src="C:\Users\jeroj\OneDrive\Documentos\GitHub\WebDesign\mousse-de-durazno-al-natural-con-leche-condensada-casera-foto-principal.webp" alt="Imagen mouse de durazno" class="receta__imagen">
 						</td>
 					</tr>
 					<tr>
-						<td><h3>Mouse de durazno</h3></td>
+						<td class="receta__caption"><h3>Mouse de durazno</h3></td>
 					</tr>
 					<tr>
-						<td>
-							<button>Ver Mas</button>
+						<td class="receta__button">
+							<a href="">Ver Mas</a>
 						</td>
 					</tr>
 				</table>
