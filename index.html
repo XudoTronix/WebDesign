@@ -51,6 +51,37 @@
 			color: black;	
 		
 		}
+
+		#presentacion {
+			background-color: #E86A25;
+			display: flex;
+			flex-flow: column;
+			flex-direction: column;
+		}
+
+		.presentacion__imagen {
+			display: flex;
+			width: 590px;
+			margin-left: 140px;
+			border-top-left-radius: 12px;
+			border-top-right-radius: 12px;
+			margin-top: -20px;
+			margin-bottom: -25px;
+		}
+
+		.presentacion__imagen__caption {
+			width: 570px;
+			background-color: #E89F25;
+			margin-left: 140px;
+			text-align: left;
+			margin-bottom: -2px;
+			padding: 10px;
+			border-bottom-left-radius: 12px;
+			border-bottom-right-radius: 12px;
+			font-size: 20px;
+			font-weight: 400;
+		}
+
 		#recetas {
 			display: flex;
 			justify-content: space-around;
@@ -89,7 +120,7 @@
 			font-size: 20px;
 			font-weight: bold;
 			line-height: 18px;
-			text-align: center;
+			text-align: top;
 			height: 65px;
 			
 		}
@@ -114,11 +145,11 @@
 			height: 35px;
 		}
 		
-		/*table, th, td {
+		table, th, td {
 			border: 2px solid black;
 			border-collapse: collapse;
 			min-height: max-content;
-		}*/
+		}
 	</style>
 	
 </head>
@@ -136,7 +167,8 @@
 		</tr>
 		<tr id="presentacion">
 			<td>
-
+				<img src="Images/evento.png" alt="Imagen del Evento" class="presentacion__imagen">
+				<p class="presentacion__imagen__caption">Vamos a cocinar! El evento social gastronomico anual ausficiado por Cookpad, inscribete y preparate para cocinar las 3 recetas de este año</p>
 			</td>
 		</tr>
 		<tr id="recetas">
