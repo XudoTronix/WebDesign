@@ -160,11 +160,31 @@
 			height: 35px;
 		}
 		
-		/*table, th, td, tr, div {
-			border: 1px solid black;
-			border-collapse: collapse;
-			min-height: max-content;
-		}*/
+		#detalles {
+			background-color: #E89F25;
+		}
+		#detalles td {
+			padding: 25px;
+		}
+		#detalles td table tr td {
+			padding: 0px;
+			min-width: 300px;
+		}
+		.detalle__imagen {
+			border-radius: 12px;
+		}
+		.tabla__pie td{
+			text-align: center;
+		}
+		.logos {
+			display: flex;
+			align-items: flex-end;
+			width: 100%;
+		}
+		.logos img {
+			min-width: 30px;
+			max-width: 76px;
+		}
 	</style>
 	
 </head>
@@ -239,56 +259,43 @@
 				</table>
 			</td>
 		</tr>
-			<tr id="detalles">
-			<table>
-				<tr>
-					<td>Texto</td>
-					<td>
-						<table>
-							<tr>
-								<td>
-								Imagen
-								</td>
-							</tr>
-							<tr>
-								<td>Texto</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-			</table>
-			</tr>
+		<tr id="detalles">
+			<td>
+				<table>
+					<tr>
+						<td style="padding-right: 25px;">Festival en colaboración con el popular salon inmobiliario “Sima” bajo el proyecto “Cooking Lab”. “Sima” hará una reaparición después de haber sido un éxito deslumbrante en las dos ultimas ocasiones. El “Cookpad Live Giant Festival vol.3” con el tema “The Final Season” se llevará a cabo a partir desde el 17 de marzo de 2022. Las golosinas de edición limitada también se venden en el sitio web oficial de la CE de “cookpad Live cafe”. ¡No te lo pierdas!</td>
+						<td style="text-align: center;">
+							<img src="images\Imagen_reperesentativa.png" alt="Imagen de evento anterior" class="detalle__imagen">
+							<a>Imagen representativa</a>
+						</td>
+					</tr>
+				</table>
+			</td>
 		</tr>
 		<tr id="pie">
 			<td>
 				<table>
 					<tr>
 						<td>
-							Imagen
+							<table class="tabla__pie">
+								<tr>
+									<td>
+										<img src="images/Cookpad_logo.png" style="width: 370px;padding-left: 50px;" alt=""> 
+									</td>
+								</tr>
+								<tr>
+									<td>Derechos reservados</td>
+								</tr>
+							</table>
 						</td>
-					</tr>
-					<tr>
-						<td>Texto</td>
+						<td class="logos">
+							<img src="images/icono_facebook.png" alt="">
+							<img src="images/icono_twitter.png" alt="">
+							<img src="images/icono_instagram.png" alt="">
+							<img src="images/icono_youtube.png" alt="">
+						</td>
 					</tr>
 				</table>
-			</td>
-			<td>
-				<table>
-					<tr>
-						<td>
-							Logo
-						</td>
-						<td>
-							Logo
-						</td>
-						<td>
-							Logo
-						</td>
-						<td>
-							Logo
-						</td>
-					</tr>
-				</table> 
 			</td>
 		</tr>
 	</table>
