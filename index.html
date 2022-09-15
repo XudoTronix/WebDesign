@@ -5,35 +5,43 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cookpad</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+		body {
+			background-color: #8b9cb9;
+			font-family:'Noto Sans';
+		  }
+		  .tabla_principal {
+			margin: auto;
+			min-width: auto;
+		  }		  
+		
+		  .top-letter {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: end;
+			align-items: center;
+			color: black;
+			font-family:'Noto Sans';
+			font-size: 10pt;
+			text-decoration: none;		
+			padding-right: 10px;			
+		  }
+	</style>
+	
 </head>
 <body>
-	<table>
-		<tr id="encabezado">
-			<td>
-				Logo
-			</td>
-			<td>
-				<table>
-					<tr>
-						<td>Recetas</td>
-						<td>Sobre Nosotros</td>
-						<td>Contactanos</td>
-					</tr>
-				</table>
+	<table cellpadding="0" cellspacing="0" class="tabla_principal">
+		<tr class="encabezado" style="display: flex;flex-wrap: wrap; align-content: center; ">
+			<td style="display: flex;flex-wrap: wrap;align-content: center;background-color: #D9D9D9;">
+				<img src="images/Cookpad_logo.png" style="width: 100px;;position: relative;float: left; padding-left: 10px; padding: 20px; " alt=""> 
+				<a href="https://cookpad.com/ar/buscar/merienda?event=search.feed_seasonal_event" class="top-letter">Recetas |</a> 
+				<a href="https://cookpad.com/ar/#modals" class="top-letter">Sobre Nosotros |</a>
+				<a href="equipo@cookpad.com" class="top-letter">Contactanos</a> 
 			</td>
 		</tr>
 		<tr id="presentacion">
 			<td>
-				<table>
-					<tr>
-						<td>
-							Imagen
-						</td>
-					</tr>
-					<tr>
-						<td>Imagen del evento con foto</td>
-					</tr>
-				</table>
 			</td>
 		</tr>
 		<tr id="recetas" style="display: flex; justify-content: space-around; flex-wrap: wrap; align-items: center; align-content: center; background-color: #E86A25; min-height: 275px; height: auto; width: auto;">
@@ -89,7 +97,7 @@
 				</table>
 			</td>
 		</tr>
-		<tr id="detalles">
+			<tr id="detalles">
 			<table>
 				<tr>
 					<td>Texto</td>
@@ -137,9 +145,9 @@
 							Logo
 						</td>
 					</tr>
-				</table>
+				</table> 
 			</td>
-		</tr>
+		</tr>-->
 	</table>
 </body>
 </html>
