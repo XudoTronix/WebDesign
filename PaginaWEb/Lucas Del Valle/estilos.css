@@ -32,7 +32,7 @@ header ul{
 header .img_header{
     width: 100px;
 }
-
+/*-------------------RECETAS-------------*/
 /* contenedor */
 .contenedor{
     display: flex;
@@ -42,6 +42,87 @@ header .img_header{
     border-color: #000000;
     flex-wrap: nowrap;
     justify-content: space-between;
+}
+
+
+/* Contenido e imagen con side menu*/
+.contenedor_receta{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50px;
+    height: 400px;
+}
+
+.contenedor_receta aside{
+    width: 22%;
+}
+
+.contenedor_receta img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+
+}
+#ver_receta1{
+    padding-top: 20px;
+    display: flex;
+    margin: auto;
+    width: 80%;
+    overflow: hidden;
+    border-color: #000000;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.img_sidebar{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #E89F25;
+    border-radius: 10px;
+    width: 20%;
+    height: 400px;
+}
+
+.img_sidebar img{
+    width: 90px;
+}
+
+.contenedor_ingredientes{
+    color: #694d37;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contenedor_ingredientes_indv{
+    background-color: white;
+    padding: 4px;
+    padding-left: 8px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+/* usuario publicando*/
+.contenedor_usuario{
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+
+/*imagenes de tiempo y porciones*/
+.miniimagenes{
+    width: 15px;
+}
+
+.ver_receta_texto ol{
+    list-style-type: none;
 }
 
 /* BARRA BUSCADORA*/
@@ -58,9 +139,6 @@ header .img_header{
     width: 28%;
 }
 /* DROPDOWN MENU*/
-.drowdown{
-    float: right;
-}
 
 .dropdown-btn{
     background-color: #E89F25;
@@ -86,6 +164,7 @@ header .img_header{
 
 .dropdown-content a:hover {
     background-color: #ddd;
+    display: block;
 }
 
 .dropdown:hover .dropdown-btn{
@@ -105,6 +184,42 @@ header .img_header{
 .logo_persona{
     width: 50px;
 }
+
+/*------------------------PUBLICAR RECETA ----------------------------------*/
+#contenedor_imagen_publicar{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.imagen_publicar_receta{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+    border-style: dashed;
+    border-radius: 5px;
+}
+
+.texto_publicar_receta{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagen_publicar_receta img{
+    width: 200px;
+}
+
+/* FORMS DE SUBIR INFORMACIóN DE LA RECETA*/
+#contenedor_publicar_receta{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+}
+
+
 /* footer */
 footer{
     background-color: #bbbbbb;
@@ -140,7 +255,7 @@ footer{
     width: 15%;
 }
 
-.footer_imng_center img{
+.footer_img_center img{
     display: flex;
     align-items: center;
     width: 25%;
