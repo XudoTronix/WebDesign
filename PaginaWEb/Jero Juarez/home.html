@@ -7,7 +7,10 @@
     <meta name="description" content="En esta pagina se pueden ver los detalles de las recestas">
     <meta name="keywords" content="web, ejercicio, UADE, Pinamar, Costa Argentina, diseño, desarrollo, html, css, javascript">
     <meta property="og:image" content="img/phi.png">
-    <link rel="stylesheet" href="estilos.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="slider.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
@@ -36,29 +39,26 @@
     <section id="HomeSearch">
         <div class="HomeSearch__Searchtab">
             <div class="HomeSearch__Searchtab__Icon">
-
+                <img src="/Images/icons8-search-30.png" alt="Icono de busqueda">
             </div>
-            <div class="HomeSearch__Searchtab__Text">
-
-            </div>
-            <div class="HomeSearch__Searchtab__Button">
-
-            </div>
+            <input type="text" placeholder="Buscar..." class="HomeSearch__Searchtab__Input">
+            <button class="HomeSearch__Searchtab__Button">Buscar</button>
         </div>
         <div class="HomeSearch__Populartags">
-
+            <h5>LO MAS BUSCADO DE HOY</h5>
+            <p>tag - tag - tag</p>
         </div>
         <div class="HomeSearch__PostRecipe">
             <div class="HomeSearch__PostRecipe__Icon">
-
+                <img src="/Images/icons8-fork-30.png" alt="Icono Tenedor">
             </div>
             <div class="HomeSearch__PostRecipe__Text">
-
+                <a href="">Publicar Receta</a>
             </div>
         </div>
         <div class="HomeSearch__WebNews">
             <div class="HomeSearch__WebNews__Image">
-
+                <img src="/Images/banner.webp" alt="Noticia del dia">
             </div>
             <div class="HomeSearch__WebNews__Button">
 
@@ -66,54 +66,84 @@
         </div>
     </section>
 
+    <h3>Nuestros Platos Del Dia!</h3>
     <section id="RecipeOTD">
-        <div class="RecipeOTD__Title">
-
+        <div class="RecipeOTD__recipe">
+            <img src="/Images/ExampleImage.jpg"" alt="Receta del dia">
+            <h4>Pastel de chocolate</h4>
+            <button>Ver Mas</button>
         </div>
-        <div class="RecipeOTD__Recipe">
-            <div class="RecipeOTD__Recipe__Image">
-
-            </div>
-            <div class="RecipeOTD__Recipe__Caption">
-
-            </div>
+        <div class="RecipeOTD__recipe">
+            <img src="/Images/ExampleImage.jpg"" alt="Receta del di">
+            <h4>Pastel de chocolate</h4>
+            <button>Ver Mas</button>
         </div>
-    </section>
-
-    <section id="NewRecipes">
-        <div class="NewRecipes__Title">
-
-        </div>
-        <div class="NewRecipes__Recipe">
-            <div class="NewRecipes__Recipe__Image">
-
-            </div>
-            <div class="NewRecipes__Recipe__Caption">
-
-            </div>
-            <div class="NewRecipes__Recipe__Rate">
-
-            </div>
-            <div class="NewRecipes__Recipe__Button">
-
-            </div>
+        <div class="RecipeOTD__recipe">
+            <img src="/Images/ExampleImage.jpg"" alt="Receta del di">
+            <h4>Pastel de chocolate</h4>
+            <button>Ver Mas</button>
         </div>
     </section>
+
+    <h3>Recetas del dia</h3>
+    <section class="pen">
+		<div class="stage">
+			<div class="element recipe1"></div>
+			<div class="element recipe2"></div>
+			<div class="element recipe3"></div>
+		</div>
+	</section>
     
+    <br><br>
+    
+    <h3>Categorias</h3>
     <section id="Categories">
-        <div class="Categories__Title">
-
+        <div class="Categories__recipe">
+            <img src="/Images/ExampleImage.jpg" alt="Imagen Categoria">
+            <h4>Pastel de chocolate</h4>
+            <button>Ver Mas</button>
         </div>
-        <div class="Categories__Recipe">
-            <div class="Categories__Recipe__Image">
-
-            </div>
-            <div class="Categories__Recipe__Caption">
-
-            </div>
+        <div class="Categories__recipe">
+            <img src="/Images/ExampleImage.jpg"" alt="Imagen Categoria">
+            <h4>Pastel de chocolate</h4>
+            <button>Ver Mas</button>
+        </div>
+        <div class="Categories__recipe">
+            <img src="/Images/ExampleImage.jpg"" alt="Imagen Categoria">
+            <h4>Pastel de chocolate</h4>
+            <button>Ver Mas</button>
+        </div>
+        <div class="Categories__recipe">
+            <img src="/Images/ExampleImage.jpg"" alt="Imagen Categoria">
+            <h4>Pastel de chocolate</h4>
+            <button>Ver Mas</button>
+        </div>
+        <div class="Categories__recipe">
+            <img src="/Images/ExampleImage.jpg"" alt="Imagen Categoria">
+            <h4>Pastel de chocolate</h4>
+            <button>Ver Mas</button>
+        </div>
+        <div class="Categories__recipe">
+            <img src="/Images/ExampleImage.jpg"" alt="Imagen Categoria">
+            <h4>Pastel de chocolate</h4>
+            <button>Ver Mas</button>
+        </div>
+        <div class="Categories__recipe">
+            <img src="/Images/ExampleImage.jpg"" alt="Imagen Categoria">
+            <h4>Pastel de chocolate</h4>
+            <button>Ver Mas</button>
+        </div>
+        <div class="Categories__recipe">
+            <img src="/Images/ExampleImage.jpg"" alt="Imagen Categoria">
+            <h4>Pastel de chocolate</h4>
+            <button>Ver Mas</button>
+        </div>
+        <div class="Categories__recipe">
+            <img src="/Images/ExampleImage.jpg"" alt="Imagen Categoria">
+            <h4>Pastel de chocolate</h4>
+            <button>Ver Mas</button>
         </div>
     </section>
-
 
     <footer>
         <section class="footer_titulo">
@@ -144,5 +174,8 @@
             </div>
         </section>
     </footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
