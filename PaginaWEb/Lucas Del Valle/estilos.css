@@ -24,10 +24,6 @@ header a{
     text-transform: uppercase;
     font-size: 16px;
 }
-header ul{
-    margin: 0;
-    padding: 0;
-}
 
 header .img_header{
     width: 100px;
@@ -136,7 +132,8 @@ header .img_header{
     font-size: 8px;
     border: solid;
     cursor: pointer;
-    width: 28%;
+    width: 100px;
+    border-radius: 5px;
 }
 /* DROPDOWN MENU*/
 
@@ -148,10 +145,15 @@ header .img_header{
     border: none;
     cursor: pointer;
 }
+.dropdown{
+    position: relative;
+    display: inline-block;
+    
+}
 
 .dropdown-content{
     display: none;
-    position: relative;
+    position: fixed;
     background-color: #f9f9f9;    
 }
 
@@ -169,6 +171,7 @@ header .img_header{
 
 .dropdown:hover .dropdown-btn{
     background-color: #401C00;
+    
 }
 
 .dropdown:hover .dropdown-content
@@ -209,14 +212,38 @@ header .img_header{
 }
 
 .imagen_publicar_receta img{
-    width: 200px;
+    width: 100px;
 }
 
 /* FORMS DE SUBIR INFORMACIóN DE LA RECETA*/
 #contenedor_publicar_receta{
-    background-color: white;
-    width: 80%;
+    width: 60%;
     margin: auto;
+    background-color: #E89F25;
+    border: #401C00 2px solid;
+    border-radius: 5px;
+    padding: 1%;
+    text-align: center;
+}
+form input{
+    margin-top: 1%;
+}
+
+form .publicar_receta_nombre_titulo{
+    background-color: white;
+    font-size: 250%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+form .publicar_receta_descripcion{
+    width: 80%;
+    height: 100px;
+    box-sizing: border-box;
+    border: 2px solid #401C00;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
 }
 
 
@@ -255,9 +282,7 @@ footer{
     width: 15%;
 }
 
-.footer_img_center img{
-    display: flex;
-    align-items: center;
+.footer_img_center{
     width: 25%;
 }
 
@@ -275,17 +300,3 @@ footer{
 
 
 /* media query */
-@media only screen and (max-width: 768px){
-    header{
-        padding-bottom: 20px;
-    }
-    header #logo,
-    {
-        float: none;
-        text-align: center;
-        width: 100%;
-    }
-    header{
-        padding-bottom: 25px;
-    }
-  
