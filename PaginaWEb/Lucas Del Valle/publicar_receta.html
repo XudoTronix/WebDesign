@@ -38,6 +38,7 @@
                 <button class="dropdown-btn">Menu</button>
                 <div class="dropdown-content">
                     <a href="/PaginaWEb/Lucas Del Valle/receta.html">Receta</a>
+                    
                 </div>
             </div>
             <div>
@@ -60,7 +61,22 @@
         <form>
             <input type="text" name="titulo_receta" placeholder="Pon el titulo de tu receta!" size="25" maxlength="25" class="publicar_receta_nombre_titulo">
             <br>
-            <input type="text" name="Descripcion" id="descrpicion_receta" placeholder="Comparte un poco mas acerca de este plato!" class="publicar_receta_descripcion" size="">
+            <textarea name="textarea" cols="100" rows="4" placeholder="Has una descripcion de tu receta!" class="publicar_receta_descripcion"></textarea>
+            <input type="text" name="procedencia" placeholder="De que pais es la receta?" maxlength="56" class="publicar_receta_procedencia"> 
+            <br>
+            <div class="publicar_receta_comensales">
+                <label for="comensales">Cantidad de comensales</label>
+                <input type="number"  placeholder="Cantidad!" min="1" max="20">
+            </div>
+            <div class="publicar_receta_tiempo">
+                <label for="tiempo">Cantidad de minutos de preparacion!</label>
+                <input type="number"  placeholder="Tiempo!" max="180" min="0">
+            </div>
+            <br>
+            <label for="Ingredientes">Ingredientes</label>
+            <br>
+            <label for=""></label>
+
         </form>
     </section>
     <footer>

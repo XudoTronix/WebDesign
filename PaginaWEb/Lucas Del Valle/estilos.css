@@ -108,7 +108,10 @@ header .img_header{
 /* usuario publicando*/
 .contenedor_usuario{
     display: flex;
-    justify-content: center;
+    float: left;
+    flex-wrap: wrap;
+}
+.contenedor_usuario .nombre_user{
     float: left;
 }
 
@@ -231,27 +234,70 @@ form input{
 
 form .publicar_receta_nombre_titulo{
     background-color: white;
-    font-size: 250%;
     text-align: center;
     border-radius: 5px;
+    font-size: larger;
 }
 
 form .publicar_receta_descripcion{
     width: 80%;
     height: 100px;
+    margin-top: 1%;
     box-sizing: border-box;
+    padding: 5px;
     border: 2px solid #401C00;
     border-radius: 4px;
     background-color: #f8f8f8;
     resize: none;
+    font-size: medium;
 }
 
+form .publicar_receta_procedencia{
+    width: 80%;
+    border: 2px solid #401C00;
+    padding: 5px;
+    border-radius: 5px;
+}
 
-/* footer */
+form .publicar_receta_comensales{
+    max-width: 80%;
+    margin: auto;
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    border: 2px solid #401C00;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.publicar_receta_comensales input{
+    border: 2px solid #401C00;
+    border-radius: 5px;
+    width: 15%;
+}
+
+form .publicar_receta_tiempo{
+    max-width: 80%;
+    margin: auto;
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    border: 2px solid #401C00;
+    padding: 1%;
+    border-radius: 5px;
+}
+.publicar_receta_tiempo input{
+    border: 2px solid #401C00;
+    border-radius: 5px;
+    width: 15%;
+}
+
+/* -------------- FOOTER ------------------------------ */
+
 footer{
     background-color: #bbbbbb;
-    padding: 20px;
-    margin-top: 20px;
     color: #000000;
     position: absolute;
     width: 100%;
