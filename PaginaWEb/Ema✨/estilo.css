@@ -52,3 +52,48 @@
     width: 16px;
     margin-right: 2px;
 }
+#somos {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+}
+#somos * {
+    margin: 10px;
+}
+#somos div img {
+    width: 100%;
+}
+#somos1 {
+    order: 1;
+}
+#somos2 {
+    order: 2;
+}
+#somos3 {
+    order: 3;
+    width: 25%;
+}
+#somos4 {
+    order: 4;
+}
+#somos5 {
+    order: 6;
+}
+#somos6 {
+    order: 5;
+    width: 10%;
+}
+#somos7 {
+    order: 7;
+}
+#somos8 {
+    order: 8;
+}
+#somos1, #somos4, #somos7, #somos8 {
+    width: 100%;
+}
+#somos2, #somos5 {
+    width: 70%;
+}
