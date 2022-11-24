@@ -32,6 +32,7 @@ body {
     min-height: 100vh;
     justify-content: space-between;
     background-color: var(--gris);
+    width: fit-content;
 }
 
 header, footer, .cuerpo {
@@ -180,4 +181,31 @@ footer aside {
     flex-flow: row wrap;
     justify-content: space-evenly;
     gap: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    header {
+        flex-wrap: wrap;
+    }
+    .buscador {
+        order: 10;
+        width: 100%;
+        min-width: 350px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    header, footer, .cuerpo {
+        padding: 20px 5% 20px 5%;
+        width: 90%
+    }
+    .info {
+        flex-direction: column;
+    }
+    .infodiv {
+        width: 100%;
+    }
+    .redes {
+        margin-bottom: 20px;
+    }
 }
