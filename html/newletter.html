@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cookpad</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+		body {
+			background-color: #8b9cb9;
+			font-family:'Noto Sans';
+		}
+		.tabla_principal {
+			margin: auto;
+			min-width: auto;
+			max-width: 875px;
+		}		  
+		
+		.encabezado{
+			display: flex;
+			flex-wrap: wrap;
+			align-content: center;
+			background-color: #D9D9D9;
+			min-height: 100px;
+			height: 100%;
+			padding: 10px;
+			padding-bottom: 20px;
+		}
+
+		.encabezado_td{
+			width: auto;
+			min-height: 100px;
+			display: flex;
+			flex-wrap: wrap;
+			align-content: center;
+		}
+
+		.top-letter {
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			color: black;
+			font-family:'Noto Sans';
+			font-size: 20px;
+			padding-left: 140px;
+			font-weight: 400;
+		}
+
+
+		.mylinks{
+			text-decoration: none;		
+			width: auto;
+			height: auto;	
+			color: #401C00;;
+		}
+
+		#presentacion {
+			background-color: #E86A25;
+			display: flex;
+			flex-flow: column;
+			flex-direction: column;
+			align-items: center;
+			padding-left: 45px;
+			padding-right: 45px;
+		}
+
+		.presentacion__imagen {
+			display: flex;
+			max-width: 590px;
+			width: 100%;
+			height: auto;
+			border-top-left-radius: 12px;
+			border-top-right-radius: 12px;
+			margin-top: -20px;
+			margin-bottom: -25px;
+		}
+
+		.presentacion__imagen__caption {
+			max-width: 570px;
+			height: auto;
+			background-color: #E89F25;
+			text-align: left;
+			margin-bottom: -2px;
+			padding: 10px;
+			font-family:'Noto Sans';
+			border-bottom-left-radius: 12px;
+			border-bottom-right-radius: 12px;
+			font-size: 20px;
+			font-weight: 400;
+			color: #401C00;
+		}
+
+		#recetas {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			align-items: center;
+			align-content: center;
+			background-color: #E86A25;
+			min-height: 275px;
+			height: auto;
+			width: auto;
+			padding: 25px;
+		}
+
+
+		.receta {
+			display: flex;
+			flex-direction:column;
+			flex-wrap: nowrap;
+			justify-content: center;
+			background-color: #E89F25;
+			padding: 8px;
+			height: 270px;
+			border-radius: 12px;
+			margin: 25px;
+		}
+
+		.receta__imagen {
+			border-radius: 12px;
+			width: 190px;
+			margin-top: 10px;
+			margin-bottom: 0;
+		}
+
+		.receta__caption {
+			order: 2;
+			font-family:'Noto Sans';
+			font-size: 20px;
+			font-weight: bold;
+			line-height: 18px;
+			text-align: top;
+			height: 65px;
+			color: #401C00;
+			
+		}
+
+		.receta__button {
+			display: flex;
+			order: 3;
+			background-color: #fff;
+  			border: none;
+  			color: black;
+ 			text-align: center;
+			vertical-align: center;
+ 			text-decoration: none;
+ 			display: inline-block;
+			font-family:'Noto Sans';
+ 			font-size: 20px;
+			line-height: 30px;
+ 			margin-bottom: 8px;
+			margin-left: 95px;
+ 			cursor: pointer;
+			border-radius: 12px;
+			width: 90px;
+			height: 35px;
+		}
+		
+		#detalles {
+			background-color: #E89F25;
+		}
+		#detalles td {
+			padding: 25px;
+		}
+		#detalles td table {
+			width: 100%;
+		}
+		#detalles td table tr td {
+			padding: 0px;
+			min-width: 300px;
+			display: flex;
+			justify-content: space-between;
+		}
+		.detalle__imagen {
+			border-radius: 12px;
+		}
+		#pie {
+			background-color: #FFC529;
+		}
+		#pie td {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+		.tabla__pie td{
+			text-align: center;
+		}
+		#logos {
+			display: flex;
+  			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			padding: 25px;
+			max-width: 350px;
+		}
+		#logos img {
+			min-width: 30px;
+			max-width: 65px;
+			height: fit-content;
+		}
+	</style>
+	
+</head>
+<body>
+	<table cellpadding="0" cellspacing="0" class="tabla_principal">
+		<tr class="encabezado">
+			<td class="encabezado_td">
+				<a href="https://cookpad.com/" target="_blank"><img src="images/Cookpad_logo.png" style="width: 210px;height: 57px;padding-left: 50px;" alt=""> </a>
+				<div class="top-letter">
+					<a href="https://cookpad.com/ar/buscar/merienda?event=search.feed_seasonal_event" target="_blank" class="mylinks">Recetas |</a> 
+					<a href="https://cookpad.com/ar/#modals" target="_blank" class="mylinks">Sobre Nosotros |</a>
+					<a href="equipo@cookpad.com" target="_blank" class="mylinks">Contactanos</a> 
+				</div>
+			</td>
+		</tr>
+		<tr id="presentacion">
+			<td>
+				<img src="Images/evento1.png" alt="Imagen del Evento" class="presentacion__imagen">
+				<p class="presentacion__imagen__caption">Vamos a cocinar! El evento social gastronomico anual ausficiado por Cookpad, inscribete y preparate para cocinar las 3 recetas de este año</p>
+			</td>
+		</tr>
+		<tr id="recetas">
+			<td>
+				<table class="receta">
+					<tr>
+						<td>
+							<img src="images\mini-brochetas-ppicada-foto-principal.webp" alt="Imagen de brochetas italianas" class="receta__imagen">
+						</td>
+					</tr>
+					<tr>
+						<td class="receta__caption">Brocheta italiana</td>
+					</tr>
+					<tr>
+						<td class="receta__button">
+							<a href="https://cookpad.com/ar/recetas/15854250-mini-brochetas-ppicada?ref=search&search_term=picadas" target="_blank" class="mylinks">Ver Mas</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<table class="receta">
+					<tr>
+						<td>
+							<img src="images\rotolos-de-espinaca-y-ricota-gratinados-foto-principal.webp" alt="Imagen de rotolos de espinaca" class="receta__imagen">
+						</td>
+					</tr>
+					<tr>
+						<td class="receta__caption">Rotolos veganos</td>
+					</tr>
+					<tr>
+						<td class="receta__button">
+							<a href="https://cookpad.com/ar/recetas/16487231-rotolos-de-espinaca-y-ricota-gratinados?ref=search&search_term=almuerzo" target="_blank"  class="mylinks">Ver Mas</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<table class="receta">
+					<tr>
+						<td>
+							<img src="images\mousse-de-durazno-al-natural-con-leche-condensada-casera-foto-principal.webp" alt="Imagen mouse de durazno" class="receta__imagen">
+						</td>
+					</tr>
+					<tr>
+						<td class="receta__caption">Mouse de durazno</</td>
+					</tr>
+					<tr>
+						<td class="receta__button">
+							<a href="https://cookpad.com/ar/recetas/14564864-mousse-de-durazno-al-natural-con-leche-condensada-casera?ref=search&search_term=postres%20con%20leche%20condensada" target="_blank"  class="mylinks">Ver Mas</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr id="detalles">
+			<td>
+				<table>
+					<tr>
+						<td>
+							<div style="padding-right: 25px; color: #401C00">Festival en colaboración con el popular salon inmobiliario “Sima” bajo el proyecto “Cooking Lab”. “Sima” hará una reaparición después de haber sido un éxito deslumbrante en las dos ultimas ocasiones. El “Cookpad Live Giant Festival vol.3” con el tema “The Final Season” se llevará a cabo a partir desde el 17 de marzo de 2022. Las golosinas de edición limitada también se venden en el sitio web oficial de la CE de “cookpad Live cafe”. ¡No te lo pierdas!</div>
+							<div style="text-align: center; color: #401C00">
+								<img src="images\Imagen_reperesentativa.png" alt="Imagen de evento anterior" class="detalle__imagen">
+								<p>Imagen representativa</p>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr id="pie">
+			<td>
+				<div>
+					<table class="tabla__pie">
+						<tr>
+							<td>
+								<div style="padding: 30px 50px 30px 50px; color: #401C00">
+									<a href="https://cookpad.com/" target="_blank"><img src="images/Cookpad_logo.png" style="width: 370px;" alt=""> </a>
+									<p>Derechos reservados</p>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id="logos">
+					<a href="https://www.facebook.com/cookpadsargentina/" target="_blank"><img src="images/icono_facebook.png" alt="Logo facebook"></a>
+					<a href="https://twitter.com/cookpadrecetas?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="images/icono_twitter.png" alt="Logo twitter"></a>
+					<a href="https://www.instagram.com/cookpad_ar/?hl=es" target="_blank"><img src="images/icono_instagram.png" alt="Logo instagram"></a>
+					<a href="https://www.youtube.com/channel/UCTKHRuyJx6oCIvsfmfvmy9Q" target="_blank"><img src="images/icono_youtube.png" alt="Logo youtube"></a>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color: #201F1C; color: #676767; text-align: center; padding: 20px;">
+				Si no queres recibir mas emails, entra a este <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">link</a> 
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

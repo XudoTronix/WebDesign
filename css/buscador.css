@@ -1,0 +1,52 @@
+#buscador {
+    width: 50%;
+    margin: 20px auto 20px auto;
+    padding: 10px;
+    height: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+#lupa, #buscado, #buscar {
+    height: 100%;
+}
+#resultado {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.receta{
+    height: auto;
+    width: auto;
+    margin: 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--gris-claro);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    gap: 10px;
+}
+.receta a{
+    text-decoration: none;
+    color: #000;
+}
+.foto {
+    min-width: 100px;
+    max-width: 150px;
+    height: auto;
+    border-radius: 20%;
+}
+.puntaje {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.puntaje img{
+    height: 16px;
+    width: 16px;
+    margin-right: 2px;
+}

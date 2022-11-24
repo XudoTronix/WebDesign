@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Descripcion de la pagina">
+    <meta name="keywords" content="palabras clave">
+    <link rel="icon" type="image/x-icon" href="../img/icono_cookpad.png">
+
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/buscador.css" />
+    <title>Cookpad | Buscador</title>
+</head>
+
+<body>
+    <header>
+        <img src="../img/logo_cookpad.jpg" alt="logo cookpad">
+        <form class="buscador">
+            <img src="../img/icono_buscador.jpg" alt="icono de busqueda">
+            <input id="input" type="search" placeholder="Buscar...">
+            <button type="button" onclick="buscar(document.getElementsByClassName('buscador')[0].value)">Buscar</button>
+        </form>
+        <div class="dropdown">
+            <img class="dropdown-btn" src="../img/icono_menu.png" alt="menu desplegable">
+            <div class="dropdown-content">
+                <a href="#" target="_blank">link 1</a>
+                <a href="#" target="_blank">link 2</a>
+                <a href="#" target="_blank">link 3</a>
+            </div>
+        </div>
+        <img class="header_usuario" src="../img/usuario_perfil.jpg" alt="acceso al perfil de usuario">
+    </header>
+    <section class="cuerpo">
+        <div id="resultado">
+        </div>
+    </section>
+    <footer>
+        <div class="info">
+            <div class="infodiv">
+                <h2>Nosotros!</h2>
+                <p>En Cookpad, nuestra misión es hacer que la cocina diaria sea divertida. Creemos firmemente que
+                    cocinar es clave para que las personas, las comunidades y el planeta tengan una vida más sana y más
+                    feliz. Empoderamos a los que cada día cocinan desde casa en cualquier parte del mundo para que entre
+                    todos nos ayudemos, compartiendo recetas y trucos de cocina.</p>
+            </div>
+            <aside>
+                <h2>Mas Informacion!</h2>
+                <ul>
+                    <li>
+                        <a href="mailto:equipo@cookpad.com?subject=%5Bayuda%5D%20cookpad.com" target="_blank"
+                            rel="noopener noreferrer">Ayuda</a>
+                    </li>
+                    <li>
+                        <a href="https://cookpad.com/ar/terminos" target="_blank" rel="noopener noreferrer">Terminos y
+                            condiciones</a>
+                    </li>
+                    <li>
+                        <a href="https://cookpad.com/ar/privacidad" target="_blank" rel="noopener noreferrer">Politicas
+                            de privacidad</a>
+                    </li>
+                </ul>
+                <h2>Siguenos!</h2>
+                <div class="redes">
+                    <img src="../img/logo_facebook.jpg" alt=""
+                        onclick="redirect('https://es-la.facebook.com/cookpadsargentina/')">
+                    <img src="../img/logo_twitter.jpg" alt="" onclick="redirect('https://twitter.com/cookpadrecetas')">
+                    <img src="../img/logo_youtube.jpg" alt=""
+                        onclick="redirect('https://www.youtube.com/channel/UCTKHRuyJx6oCIvsfmfvmy9Q')">
+                    <img src="../img/logo_instagram.jpg" alt=""
+                        onclick="redirect('https://www.instagram.com/cookpad_ar/?hl=es')">
+                </div>
+            </aside>
+        </div>
+        <img src="../img/logo_cookpad.jpg" alt="logo cookpad">
+    </footer>
+    <script src="../javascript/base.js"></script>
+    <script src="../javascript/buscador.js"></script>
+</body>
+
+</html>

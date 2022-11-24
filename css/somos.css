@@ -1,0 +1,60 @@
+.cuerpo h1 {
+    background-color: var(--gris-claro);
+    width: 100%;
+    text-align: center;
+    padding: 5px 20px;
+    color: var(--naranja);
+    font-size: xx-large;
+    border-radius: 10px 10px 0 0;
+}
+#somos {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    background-color: var(--claro);
+    border-radius: 0 0 10px 10px;
+}
+#somos * {
+    margin: 10px;
+}
+#somos div img {
+    width: 100%;
+}
+#somos1 {
+    order: 1;
+}
+#somos2 {
+    order: 3;
+    max-width: 40%;
+}
+#somos3 {
+    order: 2;
+    width: 30%;
+}
+#somos4 {
+    order: 4;
+}
+#somos5 {
+    order: 6;
+}
+#somos1, #somos4, #somos7, #somos8 {
+    width: 100%;
+}
+#somos2, #somos5 {
+    width: 70%;
+}
+img {
+    border-radius: 10px;
+}
+.miniside {
+    order: 7;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.miniside img {
+    height: 400px;
+    width: auto;
+}

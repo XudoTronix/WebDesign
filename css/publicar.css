@@ -1,0 +1,134 @@
+/* FORMS DE SUBIR INFORMACIóN DE LA RECETA*/
+#contenedor_publicar_receta{
+    width: 60%;
+    margin: auto;
+    background-color: #E89F25;
+    border: #401C00 2px solid;
+    border-radius: 5px;
+    padding: 1%;
+    text-align: center;
+}
+
+form .publicar_receta_nombre_titulo{
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 3vw;
+}
+
+form .publicar_receta_descripcion{
+    width: 80%;
+    height: 100px;
+    margin-top: 1%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 2px solid #401C00;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    font-size: 1vw;
+}
+
+form .publicar_receta_procedencia{
+    width: 80%;
+    border: 2px solid #401C00;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1vw;
+}
+
+form .publicar_receta_comensales{
+    max-width: 80%;
+    margin: auto;
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    border: 2px solid #401C00;
+    padding: 1%;
+    border-radius: 5px;
+    font-size: 1vw;
+}
+
+.publicar_receta_comensales input{
+    border: 2px solid #401C00;
+    border-radius: 5px;
+    width: 15%;
+    font-size: 1vw;
+}
+
+form .publicar_receta_tiempo{
+    max-width: 80%;
+    margin: auto;
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    border: 2px solid #401C00;
+    padding: 1%;
+    border-radius: 5px;
+    font-size: 1vw;
+}
+.publicar_receta_tiempo input{
+    border: 2px solid #401C00;
+    border-radius: 5px;
+    width: 15%;
+    font-size: 1vw;
+}
+
+.publicar_receta_ingredientes_titulo{
+    max-width: 80%;
+    margin: auto;
+    margin-top: 1%;
+    background-color: #f8f8f8;
+    border: 2px solid #401C00;
+    padding: 1%;
+    border-radius: 5px;
+    font-size: 2vw;
+    text-align: center;
+}
+
+details summary{
+    max-width: 50%;
+    margin: auto;
+    margin-top: 1%;
+    background-color: #f8f8f8;
+    border: 2px solid #401C00;
+    padding: 1%;
+    border-radius: 5px;
+    font-size: 1vw;
+    text-align: center;
+}
+
+details summary:hover{
+    cursor: pointer;
+    background-color: #694d37;
+    animation-delay: 3s;
+}
+
+.publicar_receta_inputs{
+    max-width: 100%;
+    margin: auto;
+    margin-top: 1%;
+    background-color: #f8f8f8;
+    border: 2px solid #401C00;
+    padding: 1%;
+    border-radius: 5px;
+    font-size: 1vw;
+}
+
+form button {
+    max-width: 100%;
+    margin: auto;
+    margin-top: 1%;
+    background-color: #f8f8f8;
+    border: 2px solid #401C00;
+    padding: 1%;
+    border-radius: 5px;
+    font-size: 1vw;
+}
+
+form button:hover{
+    cursor: pointer;
+    background-color: #694d37;
+}

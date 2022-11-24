@@ -1,0 +1,192 @@
+/* contenedor */
+.contenedor{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    overflow: hidden;
+    border-color: #000000;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+
+/* Contenido e imagen con side menu*/
+.contenedor_receta{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50px;
+    height: 400px;
+}
+
+.contenedor_receta aside{
+    width: 22%;
+}
+
+.contenedor_receta img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+
+}
+#ver_receta1{
+    padding-top: 20px;
+    display: flex;
+    margin: auto;
+    width: 80%;
+    overflow: hidden;
+    border-color: #000000;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.img_sidebar{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #E89F25;
+    border-radius: 10px;
+    width: 20%;
+    height: 400px;
+}
+
+.img_sidebar img{
+    width: 90px;
+}
+
+.contenedor_ingredientes{
+    color: #694d37;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contenedor_ingredientes_indv{
+    background-color: white;
+    padding: 4px;
+    padding-left: 8px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+/* usuario publicando*/
+.contenedor_usuario{
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+}
+.contenedor_usuario .nombre_user{
+    float: left;
+}
+
+/*imagenes de tiempo y porciones*/
+.miniimagenes{
+    width: 15px;
+}
+
+.ver_receta_texto ol{
+    list-style-type: none;
+}
+
+/* BARRA BUSCADORA*/
+.search{
+    float:right;
+    margin:7px;
+}
+.search button{
+    background-color: #E89F25;
+    color: #f2f2f2;
+    font-size: 8px;
+    border: solid;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 5px;
+}
+/* DROPDOWN MENU*/
+
+.dropdown-btn{
+    background-color: #E89F25;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content{
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;    
+}
+
+.dropdown-content a { 
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    display: block;
+}
+
+.dropdown:hover .dropdown-btn{
+    background-color: #401C00;
+    
+}
+
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+
+.dropdown:hover .dropdown-btn
+{
+    background-color: #401C00;
+}
+
+.logo_persona{
+    width: 50px;
+}
+
+/*------------------------PUBLICAR RECETA ----------------------------------*/
+#contenedor_imagen_publicar{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.imagen_publicar_receta{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+    border-style: dashed;
+    border-radius: 5px;
+}
+
+.texto_publicar_receta{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagen_publicar_receta img{
+    width: 100px;
+}
+
+.imagen_publicar_receta img:hover{
+    cursor: pointer;
+}
