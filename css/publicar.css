@@ -16,6 +16,22 @@ form .publicar_receta_nombre_titulo{
     font-size: 3vw;
 }
 
+.cuerpo{
+    align-items: center;
+}
+.cuerpo h2, .cuerpo h4 {
+    text-align: center;
+}
+.imagen_publicar_receta {
+    width: auto;
+    height: auto;
+}
+.imagen_publicar_receta img{
+    height: auto;
+    width: 60%;
+    margin: auto;
+}
+
 form .publicar_receta_descripcion{
     width: 80%;
     height: 100px;
@@ -131,4 +147,9 @@ form button {
 form button:hover{
     cursor: pointer;
     background-color: #694d37;
+}
+
+form * {
+    width: 90%;
+    margin: 0;
 }
