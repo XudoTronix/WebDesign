@@ -133,7 +133,7 @@ details summary:hover{
     font-size: 1vw;
 }
 
-form button {
+#contenedor_publicar_receta form button {
     max-width: 100%;
     margin: auto;
     margin-top: 1%;
@@ -144,12 +144,17 @@ form button {
     font-size: 1vw;
 }
 
-form button:hover{
+#contenedor_publicar_receta form button:hover{
     cursor: pointer;
     background-color: #694d37;
 }
 
-form * {
+#contenedor_publicar_receta form * {
     width: 90%;
-    margin: 0;
+    margin: 5px;
+    margin: auto;
+}
+
+#contenedor_publicar_receta form {
+    align-items: center;
 }

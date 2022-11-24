@@ -499,6 +499,9 @@ hr{
 }
 /* media query */
 @media only screen and (max-width: 768px){
+    .HomeSearch__PostRecipe__Text a{
+      color: rgba(0, 0, 0, 0);
+    }
     header{
         padding-bottom: 20px;
     }
