@@ -4,15 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="En esta pagina se pueden ver los detalles de las recestas">
+    <meta name="keywords" content="web, ejercicio, UADE, Pinamar, Costa Argentina, diseño, desarrollo, html, css, javascript">
+    <meta property="og:image" content="img/phi.png">
+    <title>Cookpad</title>
     <link rel="stylesheet" href="style.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 	<script src="slider.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico.png" type="image/x-icon">
 </head>
 <body>
+    <header>
+        <div class="contenedor">
+            <div id="logo">
+                <img src="/Images/Cookpad_logo.png" alt="cocina cookpad logo" class="img_header"> 
+                <div class="dropdown">
+                    <button class="dropdown-btn">Menu</button>
+                    <div class="dropdown-content">
+                    <a href="#">link 1</a>
+                    <a href="#">link 2</a>
+                    <a href="#">link 3</a>
+                    </div>                   
+                </div>               
+            </div>         
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
     <section id="Persona">
         <div class="Persona__Icon">
-            <img src="/Images/ExampleImage.jpg"" alt="Icono de Usuario">
+            <img src="/Images/icons8-usuario-90.png" alt="Icono de Usuario">
         </div>
         <div class="Persona__Info">
             <h3>Juan Perez</h3>
@@ -21,12 +46,14 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde quos maxime neque placeat ullam ratione enim autem, accusantium deleniti facilis hic incidunt laboriosam beatae temporibus. Cumque laboriosam eos illum soluta!</p>
         </div>
     </section>
-   
+    <br>
+    <br>
+    <br>
+    <h3>Mis Recetas</h3>
     <section id="Recipes">
-        <h3>Mis Recetas</h3>
         <div class="recipes__container__general">
         <div class="recipes__imagen">
-            <img src="/Images/ExampleImage.jpg"" alt="Imagen de mi receta">
+            <img src="/Images/ramen.jpg" alt="Imagen de mi receta">
         </div>
         <div class="recipes__container">
             <div class="recipes__info">
@@ -46,11 +73,14 @@
         </div>
     </div>
     </section>
+    <br>
+    <br>
+    <br>
     <h3>Mis Trucos y Consejos</h3>
     <section id="tips">
         <div class="tips__container">
             <div class="tips__image">
-                <img src="/Images/ExampleImage.jpg"" alt="Imagen mi Tip">
+                <img src="/Images/guiso.jpg" alt="Imagen mi Tip">
             </div>
             <div class="tips__container__column">
                 <div class="tips__info">
@@ -62,9 +92,11 @@
                 </div>
             </div>
         </div>
+        <br>
+        <br>
         <div class="tips__container">
             <div class="tips__image">
-                <img src="/Images/ExampleImage.jpg"" alt="Imagen mi Tip">
+                <img src="/Images/sopa.jpg" alt="Imagen mi Tip">
             </div>
             <div class="tips__container__column">
                 <div class="tips__info">
@@ -77,31 +109,64 @@
             </div>
         </div>
     </section>
+    <br>
+    <br>
+    <br>
     <h3>Recetas guardadas</h3>
     <section id="saves">
         <div class="saves__recipe">
-            <img src="/Images/ExampleImage.jpg"" alt="Receta guardada">
+            <a href="home.html"><img src="/Images/bizcochuelo.jpg" alt="Receta guardada"></a>
             <h4>Pastel de chocolate</h4>
-            <button>Ver Mas</button>
         </div>
         <div class="saves__recipe">
-            <img src="/Images/ExampleImage.jpg"" alt="Receta guardada">
+            <a href="home.html"><img src="/Images/aloz.jpg" alt="Receta guardada"></a>
             <h4>Pastel de chocolate</h4>
-            <button>Ver Mas</button>
         </div>
         <div class="saves__recipe">
-            <img src="/Images/ExampleImage.jpg"" alt="Receta guardada">
+            <a href="home.html"><img src="/Images/carne.jpg" alt="Receta guardada"></a>
             <h4>Pastel de chocolate</h4>
-            <button>Ver Mas</button>
-        </div>
-    
-    <h3>Nuevas Recetas</h3>
-    <section class="pen">
-        <div class="stage">
-            <div class="element recipe1"></div>
-            <div class="element recipe2"></div>
-            <div class="element recipe3"></div>
         </div>
     </section>
+    <br>
+    <br>
+    <br>
+    <h3>Nuevas Recetas</h3>
+    <section class="pen">
+		<div class="stage">
+			<div class="element recipe1"><a href="home.html" class="InvisibleLink"></a></div>
+			<div class="element recipe2"><a href="home.html" class="InvisibleLink"></a></div>
+			<div class="element recipe3"><a href="home.html" class="InvisibleLink"></a></div>
+		</div>
+	</section>
+
+    <footer>
+        <section class="footer_titulo">
+            <p>
+                <b>Nosotros</b>
+                <aside>
+                    <p><b>Mas informacion!</b></p>
+                    <nav>
+                        <a href="https://cookpad.com/ar" target="_blank">Ayuda</a>  <br>
+                        <a href="https://cookpad.com/ar" target="_blank">Terminos y condiciones</a>  <br>
+                        <a href="https://cookpad.com/ar" target="_blank">Politicas de privacidad</a>  <br>
+                    </nav>
+                    <p><b>Siguenos</b></p>
+                    <nav class="redes_sociales">
+                        <img src="/Images/icono_facebook.png" alt="">
+                        <img src="/Images/icono_instagram.png" alt="">
+                        <img src="/Images/icono_twitter.png" alt="">
+                        <img src="/Images/icono_youtube.png" alt="">
+                    </nav>
+                </aside>
+                <p>
+                    En Cookpad, nuestra misión es hacer que la cocina diaria sea divertida. Creemos firmemente que cocinar es clave para que las personas, las comunidades y el planeta tengan una vida más sana y más feliz. Empoderamos a los que cada día cocinan desde casa en cualquier parte del mundo para que entre todos nos ayudemos, compartiendo recetas y trucos de cocina.
+                </p>       
+            </p>
+            <br>
+            <div class="footer_imng_center">
+                <img src="/Images/Cookpad_logo.png" alt="cocina cookpad logo" > 
+            </div>
+        </section>
+    </footer>
 </body>
-</html>l
+</html>

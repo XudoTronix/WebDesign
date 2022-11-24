@@ -1,6 +1,6 @@
 body{
-    background-color: #ffff;
-    margin: 0 ;
+    background-color: #ddd;
+    margin: auto;
     padding: 0;
     font-family: 'Plus Jakarta Sans',sans-serif;
     position: relative;
@@ -210,16 +210,17 @@ footer{
     height: auto;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #401C00;
 }
 
 .Persona__Icon {
+    display: flex;
+    justify-content: center;
 }
 
 .Persona__Icon img {
     max-height: 300px;
-    border-radius: 50%;
-    max-width: max-content;
+    object-fit: cover;
+    margin: auto;
 }
 
 .Persona__Info {
@@ -228,6 +229,14 @@ footer{
     max-width: 60%;
     height: auto;
     padding: 15px;
+}
+
+.Persona__Info h3 {
+    margin-left: -50px;
+}
+
+.Persona__Info p, h6 {
+    margin-top: -15px;
 }
 
 #Recipes {
@@ -244,9 +253,14 @@ h3 {
 }
 
 .recipes__imagen img {
-border-radius: 25px;
-max-width: 100%;
-max-width: 300px;
+    padding-top: 60px;
+    max-height: 100%;
+    max-width: 100%;
+    height: 400px;
+    width: 300px;
+    border-radius: 25px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .recipes__info {
@@ -281,6 +295,7 @@ max-width: 300px;
 
 .recipes__container__button {
     justify-content: space-between;
+    padding-left: 25px;
 }
 
 .recipes__container__button button {
@@ -306,14 +321,19 @@ max-width: 300px;
 }
 
 .tips__image img {
-    min-width: 100px;
-    max-width: 300px;
+    max-height: 100%;
+    max-width: 100%;
+    height: 250px;
+    width: 300px;
     border-radius: 25px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .tips__info {
     padding: 50px;
-    max-width: 60%;
+    max-width: 100%;
+    max-height: 100%;
     padding: 15px;
     font-size: 16px;
     font-weight: 550;
@@ -335,6 +355,7 @@ max-width: 300px;
 
 .tips__container__column__button {
     justify-content: space-between;
+    padding-left: 25px;
 }
 
 .tips__container__column__button button {
@@ -357,9 +378,19 @@ max-width: 300px;
 }
 
 .saves__recipe img {
+    max-height: 100%;
+    height: 300px;
     max-width: 300px;
     border-radius: 25px;
+    object-fit: cover;
+    opacity: 1;
+    transition: 1s ease;
 }
+
+.saves__recipe img:hover{
+    opacity: 0.5;
+    transition: 1s ease;
+    }
 
 .saves__recipe button {
     background-color: #E89F25;
@@ -380,7 +411,6 @@ max-width: 300px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: #000000 solid;
 }
 
 .HomeSearch__Searchtab {
@@ -404,12 +434,22 @@ max-width: 300px;
     border: none;
 }
 
+.HomeSearch__Searchtab__Input:focus {
+    outline: none;
+  }
+
 .HomeSearch__Searchtab__Button {
     border-radius: 25px;
     border: none;
+    color: white;
     background-color: #E89F25;
     width: 10%;
     height: 30px;
+    text
+}
+
+.HomeSearch__Searchtab__Button:hover{
+    background-color: #401C00;
 }
 
 .HomeSearch__Populartags p {
@@ -434,15 +474,30 @@ max-width: 300px;
     align-self: center;
     padding: 10px;
     font-size: 18px;
-    text-decoration: none;
     font-weight: 700;
 }
 
+.HomeSearch__PostRecipe__Text a {
+    text-decoration: none;
+}
+
+.HomeSearch__PostRecipe__Text:active {
+    color: #000000;
+}
+
+.HomeSearch__PostRecipe__Text:hover {
+    color: #000000;
+}
+
+
 .HomeSearch__WebNews {
-width: 90%;
+    display: flex;
+    align-content: center;
+    max-width: 100%;
 }
 
 .HomeSearch__WebNews__Image img {
+    margin: auto;
     max-width: 100%;
 }
 
@@ -458,16 +513,18 @@ width: 90%;
 }
 
 .RecipeOTD__recipe img {
+    max-height: 100%;
+    height: 300px;
     max-width: 300px;
     border-radius: 25px;
+    object-fit: cover;
+    opacity: 1;
+    transition: 1s ease;
 }
 
-.RecipeOTD__recipe button {
-    background-color: #E89F25;
-    border-radius: 25px;
-    border-style: none;
-    padding: 10px 20px;
-    font-size: 18px;
+.RecipeOTD__recipe img:hover{
+    opacity: 0.5;
+    transition: 1s ease;
 }
 
 #Categories {
@@ -482,22 +539,24 @@ width: 90%;
 }
 
 .Categories__recipe img {
+    max-height: 100%;
+    height: 300px;
     max-width: 300px;
     border-radius: 25px;
+    object-fit: cover;
+    opacity: 1;
+    transition: 1s ease;
 }
 
-.Categories__recipe button {
-    background-color: #E89F25;
-    border-radius: 25px;
-    border-style: none;
-    padding: 10px 20px;
-    font-size: 18px;
-}
+.Categories__recipe img:hover{
+    opacity: 0.5;
+    transition: 1s ease;
+    }
 
 .pen {
     max-width: 635px;
     width: 100%;
-    margin: 50px auto 0;
+    margin: auto;
     opacity: 0;
     position: relative;
     -webkit-transition: all 0.25s ease-in-out;
@@ -515,6 +574,8 @@ width: 90%;
     max-width: 635px;
     width: 100%;
     height: 400px;
+    margin: auto;
+    padding-left: 12px;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -ms-transition: all 0.25s ease-in-out;
@@ -526,7 +587,7 @@ width: 90%;
     width: 202px;
     -webkit-transform-origin: 50% 50%;
     height: inherit;
-    margin: 0 7px 0 0;
+    margin: auto;
     display: inline-block;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
@@ -548,7 +609,7 @@ width: 90%;
     transition: all 0.25s ease-in-out;
   }
   .element.inactive {
-    width: 162px;
+    width: 165px;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -ms-transition: all 0.25s ease-in-out;
@@ -557,20 +618,27 @@ width: 90%;
     opacity: 0.4;
   }
   .element.recipe1 {
-    background: url('/Images/ExampleImage.jpg') 45% 0 no-repeat;
+    background: url('/Images/carne.jpg') 45% 0 no-repeat;
     background-size: cover;
   }
   .element.recipe2 {
-    background: url('/Images/ExampleImage.jpg') 45% 0 no-repeat;
+    background: url('/Images/aloz.jpg') 45% 0 no-repeat;
     background-size: cover;
   }
   .element.recipe3 {
-    background: url('/Images/ExampleImage.jpg') 45% 0 no-repeat;
+    background: url('/Images/guiso.jpg') 45% 0 no-repeat;
     background-size: cover;
   }
+
+  .InvisibleLink {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
   
   .element:last-of-type {
-    margin: 0;
+    margin: auto;
   }
   @media all and (max-width: 660px) {
     .pen {
