@@ -210,15 +210,15 @@
     opacity: 0.4;
   }
   .element.recipe1 {
-    background: url('img/carne.jpg') 45% 0 no-repeat;
+    background: url('/img/carne.jpg') 45% 0 no-repeat;
     background-size: cover;
   }
   .element.recipe2 {
-    background: url('img/aroz.jpg') 45% 0 no-repeat;
+    background: url('/img/pasta.jpg') 45% 0 no-repeat;
     background-size: cover;
   }
   .element.recipe3 {
-    background: url('img/guiso.jpg') 45% 0 no-repeat;
+    background: url('/img/guiso.jpg') 45% 0 no-repeat;
     background-size: cover;
   }
 
@@ -524,4 +524,13 @@ hr{
     header a{
         font-size: 12px;
     }
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 26px;
+  margin-left: -75px;
 }

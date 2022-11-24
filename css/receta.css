@@ -20,6 +20,10 @@
     height: 400px;
 }
 
+.contenedor_receta img{
+    border-radius: 50px;
+}
+
 .contenedor_receta aside{
     width: 22%;
 }
@@ -51,10 +55,6 @@
     height: 400px;
 }
 
-.img_sidebar img{
-    width: 90px;
-}
-
 .contenedor_ingredientes{
     color: #694d37;
     width: 80%;
@@ -73,6 +73,12 @@
     border-radius: 5px;
     margin-bottom: 20px;
     border-radius: 5px;
+}
+
+.contenedor_ingredientes_indv ol li{   
+    padding-left: 4px;
+    list-style: none;
+    
 }
 /* usuario publicando*/
 .contenedor_usuario{

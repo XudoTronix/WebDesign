@@ -210,15 +210,15 @@
     opacity: 0.4;
   }
   .element.recipe1 {
-    background: url('img/carne.jpg') 45% 0 no-repeat;
+    background: url('/img/carne.jpg') 45% 0 no-repeat;
     background-size: cover;
   }
   .element.recipe2 {
-    background: url('img/aroz.jpg') 45% 0 no-repeat;
+    background: url('/img/pasta.jpg') 45% 0 no-repeat;
     background-size: cover;
   }
   .element.recipe3 {
-    background: url('img/guiso.jpg') 45% 0 no-repeat;
+    background: url('/img/guiso.jpg') 45% 0 no-repeat;
     background-size: cover;
   }
 
@@ -301,9 +301,11 @@
 }
 
 .Persona__Icon img {
-    max-height: 300px;
+    max-width: 100%;
+    width: 200px;
     object-fit: cover;
     margin: auto;
+    border-radius: 50%;
 }
 
 .Persona__Info {
@@ -315,11 +317,9 @@
 }
 
 .Persona__Info h3 {
-    margin-left: -50px;
 }
 
 .Persona__Info p, h6 {
-    margin-top: -15px;
 }
 
 #Recipes {
@@ -336,7 +336,6 @@ h3 {
 }
 
 .recipes__imagen img {
-    padding-top: 60px;
     max-height: 100%;
     max-width: 100%;
     height: 400px;
@@ -387,6 +386,10 @@ h3 {
     border-style: none;
     padding: 10px 20px;
     font-size: 18px;
+}
+
+.recipes__container__button button:hover {
+  background-color: #401C00;
 }
 
 #Recipes h3 {
@@ -449,6 +452,10 @@ h3 {
     font-size: 18px;
 }
 
+.tips__container__column__button button:hover {
+  background-color: #401C00;
+}
+
 #saves {
     display: flex;
     margin: auto;
@@ -483,6 +490,10 @@ h3 {
     font-size: 18px;
 }
 
+.saves__recipe button :hover {
+  background-color: #401C00;
+}
+
 ul{
     margin-top: 10PX;
     padding: 0;
@@ -497,31 +508,16 @@ hr{
     font-size: 30px;
     margin-bottom: 0;
 }
-/* media query */
-@media only screen and (max-width: 768px){
-    header{
-        padding-bottom: 20px;
-    }
-    header #logo,
-    header nav,
-    header nav li{
-        float: none;
-        text-align: center;
-        width: 100%;
-    }
-    header li{
-        padding: 0 16px;
-    }
-    header{
-        padding-bottom: 25px;
-    }
-    header ul{
-        padding-top: 10px;
-    }
-    header #logo h1{
-        font-size: 25px;
-    }
-    header a{
-        font-size: 12px;
-    }
+
+p {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 26px;
+  margin-left: -75px;
 }

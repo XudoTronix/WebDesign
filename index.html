@@ -9,7 +9,8 @@
     <meta name="keywords"
         content="web, ejercicio, UADE, Pinamar, Costa Argentina, diseño, desarrollo, html, css, javascript">
     <link rel="icon" type="image/x-icon" href="img/icono_cookpad.png">
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="slider.js"></script>
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Cookpad | []</title>
@@ -26,12 +27,14 @@
         <div class="dropdown">
             <img class="dropdown-btn" src="img/icono_menu.png" alt="menu desplegable">
             <div class="dropdown-content">
-                <a href="#" target="_blank">link 1</a>
-                <a href="#" target="_blank">link 2</a>
-                <a href="#" target="_blank">link 3</a>
+                <a href="../index.html" target="_blank">Index</a>
+                <a href="../html/perfil.html" target="_blank">Perfil</a>
+                <a href="../html/publicar.html" target="_blank">Publicar Receta</a>
+                <a href="../html/receta.html" target="_blank">Receta!</a>
+                <a href="../html/somos.html" target="_blank">Somos</a>
             </div>
         </div>
-        <img class="header_usuario" src="img/usuario_perfil.jpg" alt="acceso al perfil de usuario">
+        <a href="/html/perfil.html"><img class="header_usuario" src="../img/usuario_perfil.jpg" alt="acceso al perfil de usuario"></a>
     </header>
     <section class="cuerpo">
         <section id="HomeSearch">
@@ -56,7 +59,12 @@
                 </div>
             </div>
         </section>
+        <br>
+        <br>
+        <br>
         <h3>Nuestros Platos Del Dia!</h3>
+        <br>
+        <br>
         <section id="RecipeOTD">
             <div class="RecipeOTD__recipe">
                 <a href="html/receta.html"><img src="img/muffins.jpg" alt="Imagen de la receta del dia"></a>
@@ -70,8 +78,14 @@
                 <a href="html/receta.html"><img src="img/pizza.jpg" alt="Imagen de la receta del dia"></a>
                 <h4>Pizza</h4>
             </div>
+        
         </section>
+        <br>
+        <br>
+        <br>
         <h3>Recetas del dia</h3>
+        <br>
+        <br>
         <section class="pen">
             <div class="stage">
                 <div class="element recipe1"><a href="html/receta.html" class="InvisibleLink"></a></div>
@@ -79,7 +93,12 @@
                 <div class="element recipe3"><a href="html/receta.html" class="InvisibleLink"></a></div>
             </div>
         </section>
+        <br>
+        <br>
+        <br>
         <h3>Categorias</h3>
+        <br>
+        <br>
         <section id="Categories">
             <div class="Categories__recipe">
                 <a href="html/receta.html"><img src="img/wrap.jpg" alt="Imagen de la Categoria"></a>
@@ -146,20 +165,18 @@
                 </ul>
                 <h2>Siguenos!</h2>
                 <div class="redes">
-                    <img src="img/logo_facebook.jpg" alt=""
-                        onclick="redirect('https://es-la.facebook.com/cookpadsargentina/')">
-                    <img src="img/logo_twitter.jpg" alt="" onclick="redirect('https://twitter.com/cookpadrecetas')">
-                    <img src="img/logo_youtube.jpg" alt=""
-                        onclick="redirect('https://www.youtube.com/channel/UCTKHRuyJx6oCIvsfmfvmy9Q')">
-                    <img src="img/logo_instagram.jpg" alt=""
-                        onclick="redirect('https://www.instagram.com/cookpad_ar/?hl=es')">
+                    <a href="https://es-la.facebook.com/cookpadsargentina/" target="_blank"><img src="../img/logo_facebook.jpg" alt="Icono de facebook"></a>
+                    <a href="https://twitter.com/cookpadrecetas" target="_blank"><img src="../img/logo_twitter.jpg" alt="icono de twitter" ></a>
+                    <a href="https://www.youtube.com/channel/UCTKHRuyJx6oCIvsfmfvmy9Q" target="_blank"></a><img src="../img/logo_youtube.jpg" alt="icono de youtube"/>
+                    <a href=" https://www.instagram.com/cookpad_ar/?hl=es" target="_blank"><img src="../img/logo_instagram.jpg" alt="icono de instagram"></a>
                 </div>
             </aside>
         </div>
         <img src="img/logo_cookpad.jpg" alt="logo cookpad">
     </footer>
-    <script src="javascript/base.js"></script>
-    <script src="javascript/index.js"></script>
+    <script src="/javascript/base.js"></script>
+    <script src="/javascript/index.js"></script>
+    <script src="/js/swiper-bundle.min.js"></script>
 </body>
 
 </html>
